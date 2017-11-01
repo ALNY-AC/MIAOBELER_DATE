@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>数据接口API调用文档</title>
+    </head>
+
+    <body>
+
+        <script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/LogTool.js" type="text/javascript" charset="utf-8"></script>
+        <script src="DataListClass.js" type="text/javascript" charset="utf-8"></script>
+        <script src="DateBuilderClass.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            /**
+             * 当页面所有Vue元素生成完毕后
+             * 调用初始函数，传入两个参数，
+             * 第一个是模板列表
+             * 第二个是最终的app列表
+             * 
+             * */
+            dateBuilder.init(initList, dataList);
+
+            l('======================initList======================');
+            l(initList);
+            l('======================dataList======================');
+            l(dataList);
+            l('======================end======================');
+        </script>
+    </body>
+
+</html>
