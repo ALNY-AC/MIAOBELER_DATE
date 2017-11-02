@@ -15,7 +15,7 @@
  * 
  */
 
-var dateBuilder = function() {
+window.dateBuilder = function() {
 
     /**
      * app模板class
@@ -178,6 +178,26 @@ var dateBuilder = function() {
 
                 });
 
+            }
+
+        },
+        /**
+         *
+         * 添加一个app到集合中
+         * 
+         * */
+        addApp: function(map) {
+
+            if(dateListName != null && typeof(dateListName) == 'object') {
+                //如果有
+                for(var x in dateListName) {
+
+                    dataList[x] = this.vueAppFactory(dateListName[x]);
+
+                }
+
+            } else {
+                l('没传入dateListName');
             }
 
         }

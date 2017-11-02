@@ -16,7 +16,7 @@
  */
 
 //这个是初始化时候用到的集合
-var initList = function() {
+window.initList = function() {
     /**
      * 每一个的格式：
      * appName:{
@@ -62,4 +62,4 @@ var initList = function() {
  * dateList['appName'].update
  * 
  * */
-var dataList = {};
+window.dataList = {};
